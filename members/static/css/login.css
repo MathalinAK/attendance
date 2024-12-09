@@ -1,0 +1,262 @@
+*{
+    font-family: "outfit",sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#sign{
+        width: 421px;
+        height: 461px;
+        margin-left: 128px;
+    }
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+
+.login-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 430px;
+    text-align: center;
+    margin-right:214px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #000000;
+}
+.textbox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px; 
+    display: flex;
+    flex-direction: column; 
+}
+
+.textbox .icon {
+    position: absolute;
+    left: 10px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    font-size: 20px; 
+    color: #000000 ;
+    pointer-events: none; 
+}
+
+.textbox input {
+    width: 100%;
+    height: 40px;
+    padding-left: 40px; 
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 4px; 
+    outline: none; 
+    color:black;
+}
+
+.textbox .eye-icon {
+    position: absolute;
+    right: 10px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    font-size: 20px; 
+    color: #000000; 
+    cursor: pointer; 
+}
+
+.textbox .new-user {
+    text-align: center;
+    margin-top: 10px; 
+}
+
+
+
+.btn {
+    width: 100%;
+    padding: 7px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom:10px;
+    
+}
+.btn:hover {
+    background-color:#0056b3;
+    color:white;
+   
+}
+.visually-hidden {
+    position: absolute; 
+    width: 1px; 
+    height: 1px;
+    margin: -1px; 
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0); 
+    overflow: hidden; 
+    white-space: nowrap; 
+}
+
+.new-user {
+    margin-left: 15px;
+    color: #060000;
+}
+.new-user a {
+    text-decoration: none;
+    color: #000000;
+    margin-left:220px;
+}
+#new-userr{
+    text-decoration: none;
+}
+
+.new-user a:hover {
+    text-decoration: underline;
+}
+.message {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.required{
+    color:red;
+}
+#label{
+    margin-right:216px;
+    padding-bottom: 5px;
+}
+#label1{
+    margin-right:173px;
+    padding-bottom: 5px;
+}
+#loginForm{
+    text-align: left;
+}
+
+#password{
+    font-size:15px;
+}
+#email{
+    font-size:15px;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .heading {
+    position: absolute;
+    top: 40%;
+    left: 68%;
+    transform: translate(-50%, -50%);
+    width: 62%; 
+    padding: 0 20px;           
+    }
+    .head{
+        color:white;
+        font-weight:bold;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        font-size: 40px;
+    }
+
+.paragraph{
+   position: absolute;
+   top: 70%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    width: 60%; 
+    padding: 0 20px;      
+}
+#button{
+    background-color: white;
+    color: black;
+    width: 40%;
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 0px;
+    height: 40px;
+    font-size: 19px;           
+}
+#button:hover{
+    background-color: #D4D972;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+    color:white;
+}
+#logo{
+    position: relative;
+    top:-1%;
+    width:60px;
+    height: 60px;
+}
+.rhead{
+    font-size:30px;
+    color:#a5ab36;
+}
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-btn {
+    background-color: transparent;
+    border: 1px solid #a5ab36;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    color:#a5ab36;
+}
+
+.social-btn:hover {
+    background-color: #000000;
+    color:white;
+}
+.error-message {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.error-text {
+    margin: 0;
+}
+.alert-error{
+    font-size:15px; 
+}
+
+
+

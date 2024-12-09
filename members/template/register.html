@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+    
+    
+<div class="container">
+    <div class="row align-items-center">
+       
+        <div class="col-md-6 image-container">
+            {% load static %}
+            <img src="{% static 'asset/register.png' %}" id="sign" alt="Registration Image">
+        </div>
+
+        <div class="col-md-6" id="container">
+            <h2 class="register">Register</h2>
+            <form method="POST" action="{% url 'registerprocess' %}">
+                {% csrf_token %}
+               <div>
+                    <label for="username" id="user">Username</label>
+                    <input type="text" id="username" name="username" placeholder="example">
+                    {% if errors.username_error %}
+                        <div class="alert-danger" id="error-message">{{ errors.username_error }}</div>
+                    {% endif %}
+                </div>
+
+                <div>
+                    <label for="email" id="user">Email <span class="required"></span></label>
+                    <input type="email" id="username" name="email" placeholder="example@gmail.com">
+                    {% if errors.email_error %}
+                        <div class="alert-danger" id="error-message">{{ errors.email_error }}</div>
+                    {% endif %}
+                </div>
+
+                <div id="password-section">
+                    <label for="password" id="user">Password</label>
+                    <div class="password-container">
+                        <input type="password" id="password" name="password" placeholder="*********" required>
+                        <i class="fa fa-eye" id="togglePassword"></i>
+                    </div>
+                    <div id="password-error" class="text-danger"></div>
+
+                    <label for="confirm_password" id="user">Confirm Password</label>
+                    <div class="password-container">
+                        <input type="password" id="confirm_password" name="confirm_password" placeholder="*********" required>
+                        <i class="fa fa-eye" id="toggleConfirmPassword"></i>
+                    </div>
+                    <div id="confirm-password-error" class="text-danger"></div>
+
+                    {% if error %}
+                        <div class="alert-danger" id="error-message">{{ error }}</div>
+                    {% endif %}
+
+                    <button type="submit" id="register-button">Register</button>
+                    <p class="new-userr" style="text-align: center;">Already have an Account? <a href="{% url 'login' %}"id="new-userr">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="{% static 'js/register.js'%}"></script>   
+</body>
+</html> 
+<!--<div class="col-md-6" id="container">
+    <h2 class="register">Register</h2>
+    <form method="POST" action="{% url 'registerprocess' %}">
+        {% csrf_token %}
+        <div>
+            <label for="email" id="user">Email</label>
+            <input type="email" id="username" name="email" placeholder="example@gmail.com">
+            {% if errors.email_error %}
+                    <div class="alert-danger" id="error-message">{{ errors.email_error }}</div>
+            {% endif %}
+        </div>
+        <div>
+            <label for="username" id="user">Username</label>
+            <input type="text" id="username" name="username" placeholder="Example">
+            {% if errors.username_error %}
+                    <div class="alert-danger" id="error-message">{{ errors.username_error }}</div>
+                {% endif %}
+        </div>
+        <div id="password-section">
+            <label for="password" id="user">Password</label>
+            <div class="password-container">
+                <input type="password" id="password" name="password" placeholder="********"required>
+                <i class="fa fa-eye" id="togglePassword"></i>
+            </div>
+            <div id="password-error" class="text-danger"></div>
+           
+        
+            <label for="confirm_password" id="user">Confirm Password</label>
+            <div class="password-container">
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="********" required>
+                <i class="fa fa-eye" id="toggleConfirmPassword"></i>
+            </div>
+            <div id="confirm-password-error" class="text-danger"></div>
+            
+            {% if error %}
+                <div class="alert-danger" id="error-message">{{ error }}</div>
+            {% endif %}
+            <button type="submit" id="register-button">signin</button>
+            <p class="new-userr" style="text-align: center;">Already have an Account? <a href="{% url 'login' %}">login</a></p>
+    </div>
+    </form>-->
+</body>
+</html>
+        
+
+
+
+
+    

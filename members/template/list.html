@@ -1,0 +1,28 @@
+
+
+{% block content %}
+    <h1 style="float:center">User's Punch In/Out Details</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Punch In Time</th>
+                <th>Punch Out Time</th>
+                <th>IP Address</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for task_user in task_users %}
+                <tr>
+                    <td>{{ task_user.username}}</td>
+                    <td>{{ task_user.punch_in }}</td>
+                    <td>{{ task_user.punch_out }}</td>
+                    <td>{{ task_user.IPAddr }}</td>
+                    <td>{{ task_user.location }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

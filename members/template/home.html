@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, {{ task_user.username }}!</h1>
+
+        <form method="POST">
+            {% csrf_token %}
+            <button type="submit" name="punch_in">Punch In</button>
+            <button type="submit" name="punch_out">Punch Out</button>
+        </form>
+    </div>
+
+    <div class="details">
+    <table>
+      
+        <tr>
+           <p>Punch In Time: 
+                      {% if punchintime and ipaddress %}
+                          {{ punchintime|date:"Y-m-d H:i:s" }}
+      
+                      {% else %}
+                          Not punched in yet
+                      {% endif %}</p>
+                      <p>IP Address: 
+                          {% if ipaddress %}
+                              {{ ipaddress }}
+                          {% else %}
+                              Not available
+                          {% endif %}
+                      </p>
+                      <p>Location: 
+                        {% if locationn %}
+                            {{ locationn}}
+                        {% else %}
+                            Not available
+                        {% endif %}
+                    </p>
+                  <p>Punch Out Time:
+                       {% if punchouttime %}
+                          {{ punchouttime|date:"Y-m-d H:i:s" }}
+                      {% else %}
+                          Not punched out yet
+                      {% endif %}</p>
+        </tr>
+      </table>
+      <a href="{% url 'list' %}">
+      
+   
+      <button type="submit" name="save" id="save">view</button>
+    </a>
+</body>
+</html>

@@ -1,0 +1,294 @@
+*{
+    font-family:"outfit","san-serif";
+}
+
+
+
+input.form-control {
+    width: 100%;
+    padding-right: 40px; 
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+
+#error-message {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+}
+.image-container img {
+    width: 390px;
+    height: 438px;
+    border-radius: 10px;
+    margin-top:40px;
+    margin-left:71px;
+}
+#sign{
+    width: 421px;
+    height: 461px;
+    margin-left: 75px;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 30px; 
+}
+#container {
+    background-color: #ffffff;
+    padding: 20px;
+    min-height: 500px;  
+    border-color: whitesmoke;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 42px;
+    margin-left: -63px;
+    width: 440px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  
+}
+
+#togglePassword, #toggleConfirmPassword {
+    position: absolute;
+    top: 41%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+
+
+.text-danger {
+    color: red;
+}
+
+
+
+
+.form-label {
+    font-weight: bold;
+    color:rgb(0, 0, 0);
+}
+.name{
+    color:rgb(0, 0, 11);
+    margin-left:110px;
+    font-size: 25px;
+}
+
+
+#error-message {
+    color: red;
+    font-size:13px;
+    border:none;
+}
+
+.alert {
+    margin-bottom: 10px;
+}
+
+
+/*.image-container img {
+        width: 351px;
+        height: 438px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        margin-top: 59px;
+        margin-left: 168px;
+    }*/
+    
+    
+   
+
+#buttonn{
+    margin-left: 258px;
+    width: 32%;
+    height:32px;
+    border:none;
+    border-radius:5px;
+}  
+
+
+.register{
+    text-align: center;
+    margin-bottom:10px;
+    font-weight: bold;
+}
+
+.text-danger {
+    color: red;
+}
+
+  
+    .required{
+    color:red;
+}
+.para{
+    text-align:center;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 20px;
+
+  }
+  .input-container {
+    position: relative;
+    width: 100%; 
+}
+
+.input-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%; 
+}
+
+.form-control {
+    padding-right: 40px; 
+}
+
+
+
+.error-message {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px; 
+}
+.invalid-border {
+    border: 2px solid red;
+}
+
+
+#password-error {
+    color: red; 
+    font-size: 12px;
+    margin-top: 5px; 
+}
+input:focus, 
+    textarea:focus, 
+    select:focus {
+        outline: none; 
+        border-color: red;
+        box-shadow: none; /
+    }
+
+
+    .input-container {
+        position: relative;
+        width: 100%;
+        margin-bottom: 0px; 
+    }
+
+
+    input.form-control {
+
+        width: 100%;
+        padding-right: 40px; 
+    }
+#username{
+        width:100%;
+        height:35px;
+        border-radius: 7px;
+        border: 1px solid #ccc; 
+        box-sizing: border-box;
+        padding:10px;
+        margin-bottom:10px;
+    }
+#send-otp-button{
+    margin-bottom:10px;
+    width:100%;
+    border-radius:7px;
+    background-color:#0066cc ;
+    color:white;
+    border: 1px solid #0066cc; 
+    height:35px;
+}
+#verify-otp-button{
+    margin-bottom:10px;
+    width:100%;
+    border-radius:7px;
+    background-color:#0066cc ;
+    color:white;
+    border: 1px solid #0066cc; 
+    height:35px;
+}
+#register-button{
+    margin-bottom:18px;
+    width:100%;
+    border-radius:7px;
+    background-color: #007bff ;
+    color:white;
+    border: 1px solid #007bff; 
+    height:35px;
+    margin-top:10px;
+}
+#register-button:hover{
+    background-color: #0056b3;
+}
+
+#user{
+    margin-bottom: 5px;
+}
+
+#password{
+    width:100%;
+    border: 1px solid #ccc; 
+    height:35px;
+    border-radius:7px;
+    padding:10px;
+    margin-bottom:5px;
+}
+#confirm_password{
+    width:100%;
+    border: 1px solid #ccc; 
+    height:35px;
+    border-radius:7px;
+    padding:10px;
+    margin-bottom:5px;
+}
+.password-container {
+    position: relative;
+    width: 100%;
+}
+.password-container input {
+    width: 100%;
+    padding-right: 30px; 
+}
+#togglePassword {
+    position: absolute;
+    top: 41%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+#toggleConfirmPassword{
+    position: absolute;
+    top: 41%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    margin-bottom:10px;
+}
+.text-danger {
+    color: red;
+}
+.alert-danger {
+    color: red;
+    font-size: 14px;
+}
+#confirm-password-error{
+    font-size:14px;
+    color:red;
+}
+#new-userr{
+    text-decoration: none;
+}
+
+
+
+
+
+ 
+
+   
+  
